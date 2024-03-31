@@ -45,7 +45,7 @@ If we rearrange the fields in the previous struct from largest to smallest, the 
 type exampleStructOptimized struct {
     f float32   // 4 bytes, starts at 0, no padding required for alignment
     i int16     // 2 bytes, starts at 4, aligned on a 2-byte boundary, no padding required
-    b bool      // 1 byte, starts at 6, 1 byte of padding might be added at the end for alignment in arrays or larger structs
+    b bool      // 1 byte, starts at 6, 1 byte of padding might be added at the end for alignment in arrays or larger structs 
 }
 ```
 
