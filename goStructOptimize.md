@@ -32,10 +32,10 @@ Floating point 32 bits (float32): float32 needs 4 bytes. The alignment rule for 
                   padding (for alignment)
 ``` 
 
-b: Represents the bool occupying 1 byte.
-p: Represents the padding of 1 byte to align the next data on its boundary.
-i: Represents the int16, which occupies 2 bytes and starts at a 2-byte boundary.
-f: Represents the float32, which occupies 4 bytes and starts at a 4-byte boundary.
+b: Represents the bool occupying 1 byte.  
+p: Represents the padding of 1 byte to align the next data on its boundary.  
+i: Represents the int16, which occupies 2 bytes and starts at a 2-byte boundary.  
+f: Represents the float32, which occupies 4 bytes and starts at a 4-byte boundary.  
 
 For minimizing internal padding within a struct, leading to more efficient memory usage it is advised to always always lay the fields out from highest to lowest.
 
