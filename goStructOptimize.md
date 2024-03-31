@@ -26,10 +26,10 @@ Floating point 32 bits (float32): float32 needs 4 bytes. The alignment rule for 
 ```CSS
   Memory Address: 0   1   2   3   4   5   6   7
                 | b | p | i | i | f | f | f | f |
-                 ^   ^   ^       ^
-                 |   |   |       |
-               bool  |  int16   float32
-                  padding (for alignment)
+                  ^   ^   ^       ^
+                  |   |   |       |
+                bool  |  int16   float32
+                   padding (for alignment)
 ``` 
 
 b: Represents the bool occupying 1 byte.  
