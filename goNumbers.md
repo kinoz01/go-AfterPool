@@ -24,7 +24,7 @@ following resources:
 - [Arden Labs - Understanding Type in Go][arden-understanding-types]
 
 Go supports the standard set of arithmetic operators of `+`, `-`, `*`, `/`
-and `%` (**remainder not modulo**[Difference between Mod and Remainder]: https://bigmachine.io/theory/mod-and-remainder-are-not-the-same/).
+and `%` (**remainder not modulo** [Difference between Mod and Remainder][Mod-and-Remainder]).
 
 In Go, assignment of a value between different types requires explicit
 conversion. For example, to convert an `int` to a `float64` you would need to
@@ -48,3 +48,4 @@ For more information on Type Conversion please see
 [go-builtins]: https://github.com/golang/go/blob/master/src/builtin/builtin.go
 [do-understanding-types]: https://www.digitalocean.com/community/tutorials/understanding-data-types-in-go
 [arden-understanding-types]: https://www.ardanlabs.com/blog/2013/07/understanding-type-in-go.html
+[Mod-and-Remainder]: https://bigmachine.io/theory/mod-and-remainder-are-not-the-same/
