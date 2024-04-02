@@ -127,5 +127,4 @@ AssignTable("Christiane", 27, "Frank", "on the left", 23.7834298)
 // You will be sitting next to Frank.
 ```
 
-Also see this [fmt cheat sheet][sheet]
-[sheet]: https://yourbasic.org/golang/fmt-printf-reference-cheat-sheet/#cheat-sheet
+Also see this [fmt cheat sheet](https://yourbasic.org/golang/fmt-printf-reference-cheat-sheet/#cheat-sheet)
