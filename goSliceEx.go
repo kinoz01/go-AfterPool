@@ -20,10 +20,9 @@ func GetItem(slice []int, index int) int {
 // If the index is out of range the value needs to be appended.
 func SetItem(slice []int, index, value int) []int {
 	if index >= len(slice) || index < 0 {
-		slice = append(slice, value)
-	} else {
-		slice[index] = value
-	}	
+		return append(slice, value)
+	}
+	slice[index] = value	
 	return slice
 }
 
