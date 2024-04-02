@@ -126,3 +126,6 @@ AssignTable("Christiane", 27, "Frank", "on the left", 23.7834298)
 // You have been assigned to table 027. Your table is on the left, exactly 23.8 meters from here.
 // You will be sitting next to Frank.
 ```
+
+Also see this [fmt cheat sheet][sheet]
+[sheet]: https://yourbasic.org/golang/fmt-printf-reference-cheat-sheet/#cheat-sheet
