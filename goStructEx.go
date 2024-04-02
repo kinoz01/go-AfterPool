@@ -69,3 +69,5 @@ func main() {
 	track = NewTrack(distance)
 	fmt.Println(CanFinish(car, track))
 }
+
+// Need for Speed
