@@ -33,6 +33,7 @@ func PrependItems(slice []int, values ...int) []int {
 		values = append(values, n)
 	}
 	return values
+	// return append(values,slice...)
 }
 
 // RemoveItem removes an item from a slice by modifying the existing slice.
@@ -47,6 +48,7 @@ func RemoveItem(slice []int, index int) []int {
 		}
 	}
 	return r
+	// return append(slice[:index], slice[index+1:]...)
 }
 
 func main() {
