@@ -74,7 +74,7 @@ You can find a full list of available verbs in the [format package documentation
 
 [fmt-docs]: https://pkg.go.dev/fmt
 
-# Instructions
+# Exercice Instructions
 
 Once there was an eccentric programmer living in a strange house with barred windows.
 One day he accepted a job from an online job board to build a party robot. The
