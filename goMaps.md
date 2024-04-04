@@ -55,6 +55,8 @@ To check whether a key exists in your map, you can use
   // value: 0; exists: false
 ```
 
+Visit [go documentation](https://go.dev/blog/maps) to read more.
+
 # Exercice Instructions
 
 A friend of yours has an old wholesale store called **Gross Store**.
