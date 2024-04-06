@@ -27,4 +27,4 @@ func main() {
 	fmt.Println(CollatzConjecture(12))
 }
 
-// 
+// Collatz Conjecture
