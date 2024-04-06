@@ -43,6 +43,7 @@ func CountInRank(cb Chessboard, rank int) int {
 func CountAll(cb Chessboard) int {
 	c := 0
 	for _, value := range cb {
+		// c += len(value)
 		for i := 0; i < len(value); i++ {
 			c++
 		}
