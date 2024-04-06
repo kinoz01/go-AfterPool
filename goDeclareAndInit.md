@@ -198,3 +198,90 @@ Maps can be nested, meaning a map can have another map as its value. This is use
         "innerKey1": 100,
     }
 ```
+
+# Types Examples
+
+When dealing with custom types in Go, especially when those types are maps, structs, slices, or even maps of maps, there are various ways to declare and initialize variables of these types. 
+
+Let's consider:
+
+```go
+    type Chessboard map[string]File
+```
+
+Below, we will provide examples based on the Chessboard type we defined, with different possibilities for what the File type could be.
+
+### Case 1: File as a Struct
+
+Assuming File is a struct type, like so:
+
+```go
+    type File struct {
+         ID   int
+         Name string
+    }
+```
+
+You can declare and initialize a Chessboard variable as follows:
+
+```go
+    board := Chessboard{
+        "a1": {ID: 1, Name: "Rook"},
+        "b1": {ID: 2, Name: "Knight"},
+        // and so on for other squares...
+    }
+```
+
+### Case 2: File as a Slice of Booleans ([]bool)
+
+```go
+    type File []bool
+
+    chessboard := Chessboard{
+        "a1": {true, false, true},
+        "b1": {false, true, true},
+        // and so on...
+    }
+```
+
+### Case 3: File as a Map
+
+If File is itself a map, for instance, mapping a string to an int:
+
+```go
+    type File map[string]int
+```
+
+Initialization could look like this:
+
+```go
+    chessboard := Chessboard{
+        "a1": {"piece": 1, "isMoved": 0},
+        "b1": {"piece": 2, "isMoved": 1},
+        // and so on...
+    }
+```
+
+### Case 4: Generic `map[type]type` Declaration and Initialization
+
+For a generic declaration of a variable where both key and value are of custom types, let's consider:
+
+```go
+    type KeyType string
+    type ValueType int
+```
+
+And you want to declare a map using these types:
+
+```go
+    type MyMap map[KeyType]ValueType
+```
+
+```go
+    myMap := MyMap{
+        "key1": 1,
+        "key2": 2,
+        // Add more key-value pairs as needed
+    }
+```
+
