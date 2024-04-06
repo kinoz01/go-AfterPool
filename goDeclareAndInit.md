@@ -211,7 +211,7 @@ Let's consider:
 
 Below, we will provide examples based on the Chessboard type we defined, with different possibilities for what the File type could be.
 
-### Case 1: File as a Struct
+### Case 1: File as a `Struct`
 
 Assuming File is a struct type, like so:
 
@@ -232,7 +232,7 @@ You can declare and initialize a Chessboard variable as follows:
     }
 ```
 
-### Case 2: File as a Slice of Booleans ([]bool)
+### Case 2: File as a Slice of Booleans (`[]bool`)
 
 ```go
     type File []bool
@@ -244,7 +244,7 @@ You can declare and initialize a Chessboard variable as follows:
     }
 ```
 
-### Case 3: File as a Map
+### Case 3: File as a `Map`
 
 If File is itself a map, for instance, mapping a string to an int:
 
