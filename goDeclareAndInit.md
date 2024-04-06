@@ -110,7 +110,7 @@ On the other hand, if you return a pointer to a struct:
 This approach creates a new instance of Person and returns a pointer to it. This means that rather than copying the entire struct each time it's passed around, only the memory address (the pointer) is copied. The advantages of using a pointer are:
 
 *Efficiency for Large Structs*: For large structs, returning and passing around pointers is more efficient than copying the structs multiple times. 
-*Mutability*: If you want to modify the struct after it's created, having a pointer makes it clear that the function or method might modify the original struct, not a copy. 
+*Mutability*: If you want to modify the struct after it's created, having a pointer makes it clear that the function or method might modify the original struct, not a copy.  
 *Consistency with nil Values*: Returning a pointer allows you to return nil to indicate failure or absence of an object, which is a common pattern in Go.
 
 # Maps
