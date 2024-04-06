@@ -139,7 +139,7 @@ Or, you can specify an initial capacity hint:
     m3 := make(map[string]int, 100)
 ```
 
-## 3. Map Literal Syntax
+## 3. `Map` Literal Syntax
 
 Declare and initialize a map using map literal syntax with key-value pairs:
 
@@ -172,7 +172,7 @@ After declaring a map with `make` or receiving a map that's already initialized,
     m6["banana"] = 10
 ```
 
-## 6. Map with Struct Types
+## 6. `Map` with `Struct` Types
 
 Maps can have complex types as values, such as structs. Here's how you declare and initialize a map with struct values:
 
@@ -188,7 +188,7 @@ Maps can have complex types as values, such as structs. Here's how you declare a
     }
 ```
 
-## 7. Nested Maps
+## 7. Nested `Maps`
 
 Maps can be nested, meaning a map can have another map as its value. This is useful for more complex data structures:
 
