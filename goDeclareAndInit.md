@@ -201,6 +201,8 @@ Maps can be nested, meaning a map can have another map as its value. This is use
 
 # Types Examples
 
+**See non-struct types in [goRange.md](https://github.com/kinoz01/go-AfterPool/blob/main/goRange.md#non-struct-types)**
+
 When dealing with custom types in Go, especially when those types are maps, structs, slices, or even maps of maps, there are various ways to declare and initialize variables of these types. 
 
 Let's consider:
