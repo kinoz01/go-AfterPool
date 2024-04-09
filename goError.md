@@ -15,7 +15,7 @@ func divide(a, b float64) (float64, error) {
 }
 ```
 
-## 2. Printing an Error to `Stdout` or Stderr Using `fmt`
+## 2. Printing an Error to `Stdout` or `Stderr` Using `fmt`
 
 The `fmt` package provides functions to format and print text, including errors.
 
