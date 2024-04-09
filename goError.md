@@ -15,7 +15,7 @@ func divide(a, b float64) (float64, error) {
 }
 ```
 
-## 2. Printing an Error to Stdout or Stderr Using fmt
+## 2. Printing an Error to `Stdout` or Stderr Using `fmt`
 
 The `fmt` package provides functions to format and print text, including errors.
 
@@ -35,7 +35,7 @@ if result, err := divide(10, 0); err != nil {
 }
 ```
 
-## 3. Creating Custom Errors with errors.New
+## 3. Creating Custom Errors with `errors.New`
 
 You can create custom error messages using the `errors.New` function. It's a straightforward approach when you need a simple error without formatting.
 
@@ -47,7 +47,7 @@ func myFunction() error {
 }
 ```
 
-## 4. Formatting Errors with fmt.Errorf
+## 4. Formatting Errors with `fmt.Errorf`
 
 When you need to include dynamic data in your error messages, `fmt.Errorf` is very handy. It allows you to format the error message similarly to `fmt.Sprintf`.
 
@@ -57,7 +57,7 @@ func anotherFunction() error {
 }
 ```
 
-## 5. Using os.Exit to Exit the Program
+## 5. Using `os.Exit` to Exit the Program
 
 If an error is critical enough that the program should not continue executing, you can use `os.Exit` to exit the program immediately. Note that `os.Exit` does not call defer statements.
 
