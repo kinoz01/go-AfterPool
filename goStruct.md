@@ -127,6 +127,46 @@ Use the `new` builtin to create new instances of structs as a last resort.
 [medium-structures-in-go]: https://medium.com/rungo/structures-in-go-76377cc106a2
 [tour-of-go-structs]: https://tour.golang.org/moretypes/2
 
+## Creating Domain-Specific Languages (DSLs)
+
+Custom types can help in building domain-specific languages within your Go programs, making certain tasks more intuitive.
+
+**Example: Fluent API for Building Queries**
+
+```go
+type QueryBuilder struct {
+    query string
+}
+
+func NewQueryBuilder() *QueryBuilder {
+    return &QueryBuilder{query: ""}
+}
+
+func (qb *QueryBuilder) Select(fields ...string) *QueryBuilder {
+    qb.query += "SELECT " + strings.Join(fields, ", ")
+    return qb
+}
+
+func (qb *QueryBuilder) Where(condition string) *QueryBuilder {
+    qb.query += " WHERE " + condition
+    return qb
+}
+
+func (qb *QueryBuilder) Build() string {
+    return qb.query
+}
+
+qb := NewQueryBuilder().
+    Select("name", "age").
+    Where("age > 18").
+    Build()
+
+fmt.Println(qb) // Output: SELECT name, age WHERE age > 18
+```
+
+This example demonstrates how custom types can be used to construct a fluent API for building SQL queries. The QueryBuilder type encapsulates the construction logic, allowing methods to be chained in a readable and intuitive way.
+
+
 # Exercice Instructions
 
 In this exercise you'll be organizing races between various types of remote controlled cars.
