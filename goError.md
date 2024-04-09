@@ -1,4 +1,4 @@
-# Basic Errors
+# Errors Handling
 
 In Go (Golang), handling and reporting errors effectively is crucial for creating robust applications. Go takes a somewhat unique approach to error handling compared to many other programming languages. It does not use exceptions; instead, errors are values that can be returned and handled explicitly. Here are some of the most common ways to return and report errors in Go, including examples using the `fmt`, `os`, and `errors` packages, as well as other methods:
 
